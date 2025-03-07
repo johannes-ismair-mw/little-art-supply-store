@@ -1,0 +1,48 @@
+/*
+TODO: Uncomment if you like to use Tailwind CSS
+@import 'tailwindcss';
+@config "../../tailwind.config.ts";
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: black;
+  background-color: white;
+  font-family: fantasy, sans-serif;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+a {
+  color: midnightblue;
+  text-decoration: none;
+}
+
+/* TODO: Think of a way to show the focus state */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.button {
+  color: black;
+  display: inline-block;
+  background-color: lightblue;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.icon-button {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}

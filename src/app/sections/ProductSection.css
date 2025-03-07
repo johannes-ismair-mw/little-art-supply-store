@@ -1,0 +1,158 @@
+.explanation {
+  padding: 20px 25px;
+  margin: 0;
+  background-color: lightblue;
+}
+
+.sidenav {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  padding-top: 25px;
+  align-items: flex-start;
+}
+
+.sidenav .category {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 10px;
+  text-align: left;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: Codystar;
+}
+
+.shopping-cart {
+  width: 30px;
+  height: 30px;
+  margin-top: 50px;
+}
+
+.reset-button {
+  opacity: 0;
+}
+
+/* Defining the layout in which all cards are shown*/
+.cards-container {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Styling each card */
+.card {
+  width: 250px;
+  height: 430px;
+  border: 3px solid gray;
+  border-radius: 5px;
+  padding: 10px 10px 25px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.card img {
+  width: 230px;
+  height: 170px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.card h1 {
+  font-family: 'Rubik Microbe';
+  font-weight: 100;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-family: 'Splash';
+}
+
+.placeholder {
+  height: 100%;
+  flex-shrink: 100;
+}
+
+/* Hide the default radio button */
+.radio-container input {
+  display: none;
+}
+
+/* Prepare the box containing the color */
+.radio-container {
+  width: 20px;
+  height: 20px;
+  border: 2px black solid;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Style the checkmark/indicator which is per default hidden */
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+  left: 4px;
+  top: 2px;
+  width: 5px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  transform: rotate(35deg);
+}
+
+/* Show the checkmark when checked */
+.radio-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Add the color to the boxes */
+.radio-container.red {
+  background-color: red;
+}
+
+.radio-container.green {
+  background-color: green;
+}
+
+.radio-container.blue {
+  background-color: blue;
+}
+
+.radio-container.yellow {
+  background-color: yellow;
+}
+
+.radio-container.pink {
+  background-color: pink;
+}
+
+.radio-container.purple {
+  background-color: purple;
+}
+
+.radio-container.turquoise {
+  background-color: turquoise;
+}
+
+/* Add the layout to the color boxes */
+.colors {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.layout {
+  display: flex;
+  padding: 25px;
+  position: relative;
+}

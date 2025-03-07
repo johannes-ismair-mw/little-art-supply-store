@@ -1,0 +1,33 @@
+.header {
+  background-color: lightblue;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  height: 100%;
+  padding: 10px 25px;
+}
+
+.header .search {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header .search .icon-button {
+  margin: 0 25px 0 10px;
+}
+
+.header .search input:focus {
+  outline: none;
+}
+
+.header .nav {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+  font-family: Codystar;
+}
