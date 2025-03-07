@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Little Art Supply Store 🎨
 
-## Getting Started
+Welcome to **Little Art Supply Store**, an example webshop designed with **very bad accessibility**. Your challenge is to **improve the accessibility** of this website!
 
-First, run the development server:
+## 🏗 Project Structure
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+The project is a **Next.js** application, structured as follows:
+
+- `/app/sections/` – Contains different sections of the webshop.
+- Each section has **TODOs** with hints on what accessibility issues to look for and fix.
+- **Global Styles:** Located in `styles/global.css`. You can use either **plain CSS** or **Tailwind CSS** (imports for Tailwind are commented out, but a `tailwind.config.js` file is available).
+
+## 🚀 Getting Started
+
+### 1️⃣ Install Dependencies
+
+Make sure you have **Node.js** installed. Then, install the necessary dependencies:
+
+```sh
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2️⃣ Run the Development Server
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Start the dev server with:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```sh
+npm run dev
+```
 
-## Learn More
+The site will be available at **http://localhost:3000**.
 
-To learn more about Next.js, take a look at the following resources:
+### 3️⃣ Choose Your Styling Approach
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Plain CSS**: Styles are defined in `styles/global.css`.
+- **Tailwind CSS**: If you prefer Tailwind, uncomment the necessary imports in `global.css`. The `tailwind.config.js` file is preconfigured (e.g., custom colors are available).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎯 Your Mission
 
-## Deploy on Vercel
+1. **Identify and fix accessibility issues** throughout the webshop.
+2. **Use the provided TODOs** in `/app/sections/` as guidance.
+3. **Test with accessibility tools** like Lighthouse, axe DevTools, or a screen reader.
+4. **Ensure proper semantic HTML, ARIA roles, keyboard navigation, and contrast.**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠 Useful Resources
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/)
+- [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
+- [axe DevTools](https://www.deque.com/axe/devtools/)
+- [Next.js Documentation](https://nextjs.org/docs)
+
+Happy fixing! 🎨♿
