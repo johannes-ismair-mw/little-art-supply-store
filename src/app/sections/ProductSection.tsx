@@ -77,9 +77,12 @@ export const ProductSection = () => {
             <a className="button">Buy</a>
           </div>
           <div className="card">
+            <span className="discount">-25%</span>
             <img src="images/product3.jpg" />
             <p className="card-title">Oil Paint Premium</p>
-            <h1 title="Discounts may apply">25€</h1>
+            <div className="discounted">
+              <h1 title="Discounts may apply">25€</h1> <span>30€</span>
+            </div>
             <div className="colors">
               <label htmlFor="radio-blue" className="radio-container blue">
                 <input id="radio-blue" type="radio" value="1" name="color" />

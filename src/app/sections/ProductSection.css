@@ -55,6 +55,7 @@
   flex-direction: column;
   align-items: center;
   flex-shrink: 0;
+  position: relative;
 }
 
 .card img {
@@ -64,9 +65,31 @@
   object-position: center;
 }
 
-.card h1 {
-  font-size: 60px;
+.card div:has(h1) {
   margin-bottom: 20px;
+}
+
+.card h1,
+.discounted {
+  font-size: 60px;
+  font-weight: normal;
+  display: inline;
+}
+
+.discounted h1 {
+  color: #ba1a1a;
+}
+
+.discounted span {
+  text-decoration: line-through;
+}
+
+.discount {
+  color: #ba1a1a;
+  font-size: 20px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
 
 .placeholder {
