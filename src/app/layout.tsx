@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
-import { Rubik_Microbe, Codystar, Megrim, Splash } from 'next/font/google';
+import { Grand_Hotel, Lato } from 'next/font/google';
 import './globals.css';
-import clsx from 'clsx';
 
 /*
 TODO: Improve the following RootLayout component by:
@@ -9,10 +8,9 @@ TODO: Improve the following RootLayout component by:
 - Thinking about the page language
 */
 
-const rubikMicrobe = Rubik_Microbe({ weight: '400', subsets: ['latin'] });
-const codystar = Codystar({ weight: '400', subsets: ['latin'] });
-const megrim = Megrim({ weight: '400', subsets: ['latin'] });
-const splash = Splash({ weight: '400', subsets: ['latin'] });
+const grandHotel = Grand_Hotel({ weight: '400', subsets: ['latin'] });
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const lato = Lato({ weight: '400', subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Little Art Supply Store',
@@ -27,16 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <body
-        className={clsx(
-          rubikMicrobe.className,
-          codystar.className,
-          megrim.className,
-          splash.className
-        )}
-      >
-        {children}
-      </body>
+      <body className={grandHotel.className}>{children}</body>
     </html>
   );
 }

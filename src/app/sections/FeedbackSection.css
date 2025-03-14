@@ -38,3 +38,7 @@ input[error='true'] {
   margin: 8px 0 0;
   text-align: center;
 }
+
+.go-back {
+  font-family: Lato;
+}

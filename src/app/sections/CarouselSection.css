@@ -18,10 +18,10 @@
   position: absolute;
   top: 100px;
   left: 50px;
-  font-size: 80px;
-  font-family: 'Splash';
+  font-size: 64px;
   color: darkred;
   user-select: none;
+  letter-spacing: 15px;
 }
 
 .fade {

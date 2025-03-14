@@ -13,7 +13,7 @@ TODO: Improve the following FeedbackSection component by:
 export const FeedbackSection = () => {
   return (
     <div className="feedback-container">
-      <p>
+      <p className="go-back">
         To go back to the beginning click <a href="#">here</a>.
       </p>
       <p>Please give us some feedback:</p>
